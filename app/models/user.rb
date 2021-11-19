@@ -9,7 +9,8 @@
 #
 
 class User < ApplicationRecord
-  
+
+
   def comments
     my_id = self.id
     matching_comments = Comment.where({ :author_id => my_id })
